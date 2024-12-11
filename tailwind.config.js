@@ -9,7 +9,7 @@ module.exports = {
         montserrat: 'Montserrat'
       },
       colors:{
-        'blue1': '#1C2E79',
+        'blue1': '#141434',
       },
     },
   },
