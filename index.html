@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./public/img/logo/image.png" type="image/x-icon"/>
+
+
+    <!-- TODO: stylesheet integrations -->
+    <link href="./src/css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/index.css">
+
+    <!-- ? GOOGLE APIS (e.g Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- ! FLOWBITE -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+
+    <!-- ! DATAOS Scroll behavior API -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <main>
+        <section class="relative bg-center bg-cover bg-no-repeat h-[100vh] w-full" id="home" style="background-image: url('./public/img/bg/matt-hardy-6ArTTluciuA-unsplash.jpg');">
+            <div class="w-full h-full absolute inset-0 m-auto z-10" id="bg-overlay"></div>
+            <div class="z-20 w-full h-full absolute overflow-hidden -bottom-32 left-1/2 transform -translate-x-1/2 flex justify-center items-end tracking-widest">
+                <h1 class="font-montserrat text-[18rem] font-bold" id="gradient-text1">BLUEWATER</h1>
+            </div>
+            <header class="z-40 absolute top-0 left-1/2 transform -translate-x-1/2 w-full">
+                <nav class="w-full z-20 bg-white">
+                    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto w-full p-4">
+                        <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                            <img src="./public/img/logo/bluewater-noletters-nobg.png" class="h-16" alt="Bluewater Process LLC Logo">
+                            <span class="leading-tight">
+                                <p class="text-2xl font-medium  text-blue1 font-worksans ">Bluewater</p>
+                                <p class="text-sm font-poppins">Legal Process LLC</p>
+                            </span>
+                        </a>
+                        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                            <button type="button" class="text-white bg-blue-700 font-worksans uppercase transition duration-500 ease-in-out hover:scale-110 font-medium rounded-lg text-sm px-8 py-2 text-center">Get started</button>
+                            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="navbar-sticky" aria-expanded="false">
+                                <span class="sr-only">Open main menu</span>
+                                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="items-center justify-between bg-white py-2 px-8 rounded-full hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                            <ul class="font-worksans flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                                <li>
+                                <a href="#" class="block py-2 px-3 text-blue-600 rounded md:bg-transparent md:hover:text-blue-700 md:text-blue-600 md:p-0" aria-current="page">Home</a>
+                                </li>
+                                <li>
+                                <a href="#" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">About</a>
+                                </li>
+                                <li>
+                                <a href="#" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Services</a>
+                                </li>
+                                <li>
+                                <a href="#" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="absolute inset-0 m-auto flex flex-col justify-center items-center w-full z-30">
+                <h1 class="text-white text-5xl font-worksans text-center leading-relaxed mb-4">FAST, FRIENDLY AND EFFICIENT<br> LEGAL PROCESS SERVICE.</h1>
+                <a href="" class="border border-gray-200 py-2 px-8 text-gray-600 bg-white rounded shadow-lg shadow-white font-medium">
+                    <p>
+                        Learn More
+                    </p>
+                </a>
+            </div>
+        </section>
+        <section id="about" class="relative w-full h-[95dvh] ">
+            <div class="flex flex-col justify-center space-y-64 h-full text-white font-worksans px-16">
+                <div class="flex text-leftjustify-start w-1/3">
+                    <p class="text-lg uppercase">Premier legal process service and legal courier provider for the Blue Water Area of the State of Michigan. We provide unmatched service of your legal documents that other legal process providers just don’t offer or provide poorly.</p>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <p class="uppercase text-6xl text-white pb-4 hover-underline-animation" data-aos="fade-left">Welcome to Blue Water Legal Process LLC</p>
+                    
+                </div>
+                <div class="flex text-right justify-end">
+                    <div class="w-1/3">
+                        <p class="text-lg uppercase">Trust us to deliver your legal documents in a fast, friendly and efficient manner that will provide you with a challenge-proof affidavit of service.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="testimony" class="relative w-full h-[95dvh] bg-center bg-cover bg-no-repeat" style="background-image: url('./public/img/bg/pexels-rebrand-cities-581004-1367272.jpg');">
+            <div class="absolute w-full h-full z-10" id="bg-overlay2"></div>
+            <!-- <div class="absolute w-3/6 h-full z-10 left-0 top-1/2 transform -translate-y-1/2" id="bg-overlay3"></div> -->
+            <div class="flex items-center justify-center space-y-64 h-full text-white font-worksans px-16 relative z-30 ">
+                <div class="font-worksans text-white inline-flex flex-col items-center justify-end text-center text-lg shadow-lg shadow-white bg-glass backdrop-blur-sm w-1/2 p-8 rounded">
+                    <span>
+                        <img src="./public/img/logo/bluewater-noletters-nobg.png" alt="" class="h-14 mb-2">
+                    </span>
+                    <strong class="text-4xl tracking-wider uppercase mb-1">David Miller</strong>
+                    <span class="text-base font-medium uppercase mb-4"> Owner, Blue water Legal Process.</span>
+                    <span class="">
+                        <q class="break-words font-light">We are committed to delivering unparalleled service, ensuring that we not only get the job done right the first time, but also quickly to the standards you expect.</q>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section id="ready" class="relative w-full h-[55dvh] bg-white bg-cover bg-no-repeat">
+            
+            <!-- <div class="absolute w-3/6 h-full z-10 left-0 top-1/2 transform -translate-y-1/2" id="bg-overlay3"></div> -->
+            <div class="flex items-center justify-center space-y-64 h-full text-white font-worksans px-16 relative z-30 ">
+                <div class="font-worksans text-white inline-flex flex-col items-start justify-end text-center text-lg shadow-lg shadow-white bg-glass backdrop-blur-md w-1/2 p-8 rounded">
+                    <p class="text-7xl font-poppins text-start leading-normal tracking-wide mb-2">Ready to Start your Service Request?</p>
+                    <span class="mb-4">
+                        <p class="text-left font-poppins tracking-wide">There has never been a better time than right now to get started with us. Press “Get Started” below to see our full range of services we provide.</p>
+                    </span>
+                    <a href="" class="py-3 px-12 rounded bg-orange-500">
+                        <p>Get Started</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <footer class="bg-zinc-900">
+            <div class="px-8 flex justify-between items-start">
+                <div class="flex justify-between items-center space-x-8 p-8 text-white text-lg font-worksans uppercase">
+                    <span>
+                        <a href="">
+                            <p>Home</p>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="">
+                            <p>About</p>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="">
+                            <p>Service</p>
+                        </a>
+                    </span>
+                </div>
+                <div class="flex flex-col items-center p-8">
+                    <span class="flex flex-col items-center uppercase mb-8">
+                        <img src="./public/img/logo/bluewater-noletters-nobg.png" alt="Bluewater Legal Process LLC Logo" class="h-16">
+                        <p class="text-white text-2xl font-worksans tracking-wider">Bluewater</p>
+                        <p class="text-blue-500 tracking-wider font-medium text-sm">Legal Process LLC</p>
+                    </span>
+                    <span class="flex items-center justify-center space-x-8 mb-8">
+                        <a href="">
+                            <img src="./public/img/icon/facebook (1).png" alt="Bluewater Legal Process LLC Facebook Icon" class="h-8">
+                        </a>
+                        <a href="">
+                            <img src="./public/img/icon/instagram (1).png" alt="Bluewater Legal Process LLC Facebook Icon" class="h-8">
+                        </a>
+                        <a href="">
+                            <img src="./public/img/icon/linkedin (1).png" alt="Bluewater Legal Process LLC Facebook Icon" class="h-8">
+                        </a>
+                        <a href="">
+                            <img src="./public/img/icon/telegram.png" alt="Bluewater Legal Process LLC Facebook Icon" class="h-8">
+                        </a>
+                        <a href="">
+                            <img src="./public/img/icon/whatsapp.png" alt="Bluewater Legal Process LLC Facebook Icon" class="h-8">
+                        </a>
+
+                    </span>
+                    <p class="text-white font-worksans uppercase font-light">©2024 Bluewater legal process. All rights reserved.</p>
+                </div>
+                <div class="flex justify-between items-center space-x-8 p-8 text-white text-lg font-worksans uppercase">
+                    <span>
+                        <a href="">
+                            <p>Contact us</p>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="" >
+                            <p class="bg-blue-500 py-2 px-8">Get Started</p>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>

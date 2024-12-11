@@ -1,0 +1,89 @@
+
+#about{
+    background: rgb(0,3,33);
+    background: linear-gradient(180deg, rgb(7, 8, 27) 0%, rgba(0,3,33,1) 50%, rgb(32, 32, 56) 100%);
+}
+#bg-overlay{
+    background: rgb(0,3,33);
+    background: linear-gradient(0deg, rgb(0, 2, 26) 16%, rgba(0,3,33,0.6) 70%, rgba(20,20,52,0.5) 100%);
+}
+
+#bg-overlay2{
+  background: rgb(0,3,33);
+  background: linear-gradient(0deg, rgba(32, 32, 56) 15%, rgba(0,3,33, 0.2) 50%, rgba(32, 32, 56) 100%);
+}
+#bg-overlay3{
+  background: rgb(0,3,33);
+  background: linear-gradient(90deg, rgba(32, 32, 56, 0.102) 0%, rgba(32, 32, 56, 0.1) 30%, rgba(32, 32, 56, 0.1) 70%, rgba(32, 32, 56, 0.1) 90%, rgba(32, 32, 56, 0.034) 100%);
+}
+
+.bg-glass{
+  background-color: rgba(32, 32, 56, 0.4);
+}
+#ready{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1006%26quot%3b)' fill='none'%3e%3cpath d='M1619.63 344.47C1482.73 340.52 1389.09 146.83 1112.5 137.27 835.91 127.71 745.13-93.41 605.37-99.12' stroke='rgba(19%2c 36%2c 109%2c 0.74)' stroke-width='2'%3e%3c/path%3e%3cpath d='M1577.09 341.86C1477.09 341.59 1380.17 271.86 1183.25 271.86 986.33 271.86 1003.45 348.82 789.41 341.86 575.37 334.9 532.9-30.59 395.57-64.76' stroke='rgba(19%2c 36%2c 109%2c 0.74)' stroke-width='2'%3e%3c/path%3e%3cpath d='M1680.58 453.35C1565.49 438.2 1529.06 192.97 1310.16 173.35 1091.27 153.73 1044.04-14.18 939.75-19.87' stroke='rgba(19%2c 36%2c 109%2c 0.74)' stroke-width='2'%3e%3c/path%3e%3cpath d='M1456.1 184.29C1275.56 184.74 1107.45 308.91 744.53 307.49 381.62 306.07 237.75-87.95 32.97-102.25' stroke='rgba(19%2c 36%2c 109%2c 0.74)' stroke-width='2'%3e%3c/path%3e%3cpath d='M1668.12 397.15C1512.02 397.68 1379.22 520.65 1054.9 514.75 730.59 508.85 642.8 10.47 441.69-26.3' stroke='rgba(19%2c 36%2c 109%2c 0.74)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1006'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+*{
+    .hide-scrollbar {
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+      }
+      
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Edge */
+      }
+    
+      scroll-behavior: smooth;
+}
+
+#gradient-text1{
+    background: #CFCFCF;
+    background: linear-gradient(to bottom, rgb(24, 39, 211, 0.2) 25%, rgb(255, 255, 255, 1) 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #006ce0;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+  }
+  
+  .hover-underline-animation.left::after {
+    transform-origin: bottom right;
+  }
+  
+  .hover-underline-animation.left:hover::after {
+    transform-origin: bottom left;
+  }
+  
+  .hover-underline-animation.center::after {
+    transform-origin: bottom center;
+  }
+  
+  .hover-underline-animation.center:hover::after {
+    transform-origin: bottom center;
+  }
+  
+  .hover-underline-animation.right::after {
+    transform-origin: bottom left;
+  }
+  
+  .hover-underline-animation.right:hover::after {
+    transform-origin: bottom right;
+  }
