@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="icon" href="./public/img/logo/image.png" type="image/x-icon"/>
-    <script src="./public/js/index.js" defer></script>
+    <link rel="icon" href="../../public/img/logo/image.png" type="image/x-icon"/>
+    <script src="../../public/js/index.js" defer></script>
 
     <!-- TODO: stylesheet integrations -->
-    <link href="./src/css/output.css" rel="stylesheet">
-    <link rel="stylesheet" href="./public/css/index.css">
+    <link href="../css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../public/css/index.css">
 
     <!-- ? GOOGLE APIS (e.g Fonts) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,11 +25,7 @@
 </head>
 <body>
     <main>
-        <section class="relative bg-center bg-cover bg-no-repeat w-full" id="home" style="background-image: url('./public/img/bg/matt-hardy-6ArTTluciuA-unsplash.jpg');">
-            <div class="w-full h-full absolute inset-0 m-auto z-10" id="bg-overlay"></div>
-            <div class="z-20 w-full h-full absolute overflow-hidden 2sm:bottom-0 left-1/2 transform -translate-x-1/2 flex justify-center items-end tracking-widest">
-                <h1 class="font-montserrat 2sm:text-5xl md:text-8xl lg:text-9xl xl:text-[17.5rem] font-bold" id="gradient-text1" data-aos="fade-left">BLUEWATER</h1>
-            </div>
+        <section class="relative bg-center bg-cover bg-fixed bg-no-repeat w-full bg-blue2" id="service">
             <header class="relative z-40 w-full">
                 <nav class="w-full z-20 bg-white">
                     <div class="flex 2sm:flex-wrap lg:flex-nowrap items-center justify-center lg:justify-between mx-auto w-full p-4">
@@ -50,8 +46,8 @@
                         </div>
                         <div class="w-full lg:flex items-center justify-end bg-white py-2 rounded-full hidden  md:order-1" id="navbar-sticky">
                             <ul class="font-worksans flex flex-col justify-center md:p-0 font-medium rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
-                                <li class="flex items-center"><a href="./index.html" class="block py-2 px-3 text-blue-600 rounded md:bg-transparent md:hover:text-blue-700 md:text-blue-600 md:p-0" aria-current="page">Home</a></li>
-                                <li class="flex items-center"><a href="./src/pages/about-us.html" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">About</a></li>
+                                <li class="flex items-center"><a href="../../index.html" class="block py-2 px-3 text-blue-600 rounded md:bg-transparent md:hover:text-blue-700 md:text-blue-600 md:p-0" aria-current="page">Home</a></li>
+                                <li class="flex items-center"><a href="./about-us.html" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">About</a></li>
                                 <li class="relative flex items-center">
                                     <button id="dropdown-button2" class="py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 flex items-center">
                                         Services
@@ -61,12 +57,12 @@
                                     </button>
                                     <ul id="dropdown-menu2" class="absolute top-8 hidden bg-white rounded shadow-lg w-48 z-50">
                                         <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 text-gray-800">Service Area</a></li>
-                                        <li><a href="./src/pages/service-terms.html" class="block py-2 px-4 hover:bg-gray-100 text-gray-800">Service Terms</a></li>
-                                        <li><a href="./src/pages/services-provided.html" class="block py-2 px-4 hover:bg-gray-100 text-gray-800">Services Provided</a></li>
+                                        <li><a href="./service-terms.html" class="block py-2 px-4 hover:bg-gray-100 text-gray-800">Service Terms</a></li>
+                                        <li><a href="./services-provided.html" class="block py-2 px-4 hover:bg-gray-100 text-gray-800">Services Provided</a></li>
                                         <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 text-gray-800">Services Blog</a></li>
                                     </ul>
                                 </li>
-                                <li class="flex items-center"><a href="./src/pages/about-us.html" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Contact</a></li>
+                                <li class="flex items-center"><a href="./about-us.html" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Contact</a></li>
                                 <li class="flex items-center"><button type="button" class="text-white 2sm:hidden sm:block bg-blue-700 font-worksans uppercase transition duration-500 ease-in-out hover:scale-110 font-medium rounded-lg text-sm px-8 py-4">Get started</button></li>
                             </ul>
                         </div>
@@ -74,146 +70,120 @@
                 </nav>
             </header>
             
-              
-            <div class="relative flex flex-col justify-center items-center w-full z-30 2sm:h-[75dvh] lg:h-[90dvh]">
-                <h1 class="text-white 2sm:text-xl sm:text-4xl font-worksans text-center leading-relaxed mb-4">FAST, FRIENDLY AND EFFICIENT<br> LEGAL PROCESS SERVICE.</h1>
-                <a href="" class="border border-gray-200 py-2 px-8 text-gray-600 bg-white rounded shadow-lg shadow-white font-medium">
-                    <p>
-                        Learn More
-                    </p>
-                </a>
-            </div>
-        </section>
-        <!-- <section id="about" class="relative w-full py-16">
-            <div class="flex flex-col justify-center 2sm:space-y-40 md:space-y-52 h-full text-white font-worksans 2sm:px-8 md:px-16">
-                <div class="flex text-left justify-start 2sm:w-full md:w-2/3 lg:w-1/2">
-                    <p class="text-lg uppercase">Premier legal process service and legal courier provider for the Blue Water Area of the State of Michigan. We provide unmatched service of your legal documents that other legal process providers just don’t offer or provide poorly.</p>
-                </div>
-                <div class="flex flex-col items-center justify-center">
-                    <p class="uppercase text-4xl md:text-6xl text-white pb-4 hover-underline-animation text-center" data-aos="fade-left">Welcome to Blue Water Legal Process LLC</p>
-                    
-                </div>
-                <div class="flex text-right justify-end">
-                    <div class="2sm:w-full md:w-2/3 lg:w-1/2">
-                        <p class="text-lg uppercase">Trust us to deliver your legal documents in a fast, friendly and efficient manner that will provide you with a challenge-proof affidavit of service.</p>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!-- <section id="testimony" class="relative w-full h-[95dvh] bg-center bg-cover bg-no-repeat" style="background-image: url('./public/img/bg/pexels-rebrand-cities-581004-1367272.jpg');">
-            <div class="absolute w-full h-full z-10" id="bg-overlay2"></div>
-            <div class="flex items-center justify-center space-y-64 h-full text-white font-worksans px-16 relative z-30 ">
-                <div class="font-worksans text-white inline-flex flex-col items-center justify-end text-center text-lg shadow-lg shadow-white bg-glass backdrop-blur-sm w-1/2 p-8 rounded">
-                    <span>
-                        <img src="./public/img/logo/bluewater-noletters-nobg.png" alt="" class="h-14 mb-2">
-                    </span>
-                    <strong class="text-4xl tracking-wider uppercase mb-1">David Miller</strong>
-                    <span class="text-base font-medium uppercase mb-4"> Owner, Blue water Legal Process.</span>
-                    <span class="">
-                        <q class="break-words font-light">We are committed to delivering unparalleled service, ensuring that we not only get the job done right the first time, but also quickly to the standards you expect.</q>
+            <div class="flex flex-col justify-end items-center w-full z-30 pt-16">
+                <div class="w-2/5 flex flex-col items-start justify-start">
+                    <h1 class="text-white text-4xl font-worksans text-left leading-relaxed mb-4 font-medium uppercase">Terms of Service Agreement.</h1>
+                    <span class="font-poppins font-light text-gray-200 tracking-wide leading-relaxed">
+                        <p class="text-left mb-4">By placing any service request order with Blue Water Legal Process LLC, you are entering into a legally binding agreement service contract and agree to be bound by the following terms of service:</p>
+                        <p class="text-left mb-4">Blue Water Legal Process LLC with make 3-4 service attempts of your legal documents: one morning, one afternoon, one evening attempt and one weekend Saturday attempt. The first service attempt will be started normally within 24-48 hours after confirmation of receiving your service documents. If the service of the documents cannot be completed within these attempts or Blue Water Legal Process LLC gains other information where the service cannot be completed, Blue Water Legal Process LLC will refer back to you before issuing a Non-Service affidavit.</p>
+                        <p class="text-left mb-4">You understand that you are paying for ATTEMPTS of service and that actual successful service of the documents is never a full guarantee.</p>
+                        <p class="text-left mb-4">You agree to a Force Majeure Clause with this service agreement. There are situations that could arise on both a Civil or Weather related incident that are completely out of the control of Blue Water Legal Process LLC that could delay, or even prevent service of legal process from happening. Blue Water Legal Process LLC will be proactive in all these circumstances and will update you as needed. You agree to hold Blue Water Legal Process LLC harmless if these circumstances were to arise.</p>
+                        <p class="text-left mb-4">All invoices are due to Blue Water Legal Process LLC within thirty (30) days of the invoicing date. Any invoice that is not paid within the thirty (30) days will be accessed a $15.00 late fee to the balance each month the invoice remains unpaid.</p>
                     </span>
                 </div>
             </div>
         </section>
-        <section id="ready" class="relative w-full h-[55dvh] bg-white bg-cover bg-no-repeat">
+        <section id="ready2" class="relative w-full h-[60dvh] bg-cover bg-center bg-no-repeat bg-blue2">
+            
+            <!-- <div class="absolute w-3/6 h-full z-10 left-0 top-1/2 transform -translate-y-1/2" id="bg-overlay3"></div> -->
             <div class="flex items-center justify-center space-y-64 h-full text-white font-worksans px-16 relative z-30 ">
-                <div class="font-worksans text-white inline-flex flex-col items-start justify-end text-center text-lg shadow-lg shadow-white bg-glass backdrop-blur-md w-1/2 p-8 rounded">
+                <div class="font-worksans text-white inline-flex flex-col items-start justify-end text-center text-lg border border-gray-500 shadow-2xl shadow-blue-600/50 bg-glass backdrop-blur-md w-1/2 p-8 rounded">
                     <p class="text-7xl font-poppins text-start leading-normal tracking-wide mb-2">Ready to Start your Service Request?</p>
                     <span class="mb-4">
                         <p class="text-left font-poppins tracking-wide">There has never been a better time than right now to get started with us. Press “Get Started” below to see our full range of services we provide.</p>
                     </span>
-                    <a href="" class="py-3 px-12 rounded bg-blue1">
+                    <a href="" class="py-3 px-12 rounded bg-blue-600">
                         <p>Get Started</p>
                     </a>
                 </div>
             </div>
-        </section> -->
-        <footer class="bg-[#141434]">
-            <div class="px-8 flex justify-between items-start">
-                <div class="hidden lg:flex justify-between items-center space-x-8 p-8 text-white text-lg font-worksans uppercase">
+        </section>
+        <footer class="lg:px-8">
+            <div class="flex justify-center lg:justify-between items-start">
+                <div class="hidden lg:flex  justify-between items-center space-x-8 p-8 text-blue1 text-lg font-worksans uppercase">
                     <span>
-                        <a href="">
+                        <a href="../../index.html">
                             <p>Home</p>
                         </a>
                     </span>
                     <span>
-                        <a href="">
+                        <a href="./about-us.html">
                             <p>About</p>
                         </a>
                     </span>
                     <span>
-                        <a href="">
+                        <a href="./services-provided.html">
                             <p>Service</p>
                         </a>
                     </span>
                 </div>
-                <div class="flex flex-col items-center sm:p-8">
+                <div class="flex flex-col items-center p-8 ">
                     <span class="flex flex-col items-center uppercase mb-8">
-                        <img src="./public/img/logo/bluewater-noletters-nobg.png" alt="Bluewater Legal Process LLC Logo" class="h-16">
-                        <p class="text-white text-2xl font-worksans tracking-wider">Bluewater</p>
-                        <p class="text-blue-500 tracking-wider font-medium text-sm">Legal Process LLC</p>
+                        <img src="../../public/img/logo/bluewater-noletters-nobg.png" alt="Bluewater Legal Process LLC Logo" class="h-16">
+                        <p class="text-blue2 text-2xl font-worksans tracking-wider">Bluewater</p>
+                        <p class="text-blue-800 tracking-wider font-medium text-sm">Legal Process LLC</p>
                     </span>
                     <span class="flex items-center justify-center space-x-8 mb-8">
-                        <a href="">
-                            <img src="./public/img/icon/facebook (1).png" alt="Bluewater Legal Process LLC Facebook Icon" class="h-8">
+                        <a href="#">
+                            <img src="../../public/img/icon/facebook (1).png" alt="Bluewater Legal Process LLC Facebook Icon" class="h-6 sm:h-8">
                         </a>
-                        <a href="">
-                            <img src="./public/img/icon/instagram (1).png" alt="Bluewater Legal Process LLC Facebook Icon" class="h-8">
+                        <a href="#">
+                            <img src="../../public/img/icon/instagram (1).png" alt="Bluewater Legal Process LLC Facebook Icon" class="h-6 sm:h-8">
                         </a>
-                        <a href="">
-                            <img src="./public/img/icon/linkedin (1).png" alt="Bluewater Legal Process LLC Facebook Icon" class="h-8">
+                        <a href="#">
+                            <img src="../../public/img/icon/linkedin (1).png" alt="Bluewater Legal Process LLC Facebook Icon" class="h-6 sm:h-8">
                         </a>
-                        <a href="">
-                            <img src="./public/img/icon/telegram.png" alt="Bluewater Legal Process LLC Facebook Icon" class="h-8">
+                        <a href="#">
+                            <img src="../../public/img/icon/telegram.png" alt="Bluewater Legal Process LLC Facebook Icon" class="h-6 sm:h-8">
                         </a>
-                        <a href="">
-                            <img src="./public/img/icon/whatsapp.png" alt="Bluewater Legal Process LLC Facebook Icon" class="h-8">
+                        <a href="#">
+                            <img src="../../public/img/icon/whatsapp.png" alt="Bluewater Legal Process LLC Facebook Icon" class="h-6 sm:h-8">
                         </a>
 
                     </span>
-                    <div class="lg:hidden flex flex-col items-center text-white w-full mb-8">
+                    <div class="lg:hidden flex flex-col items-center text-blue1 w-full mb-8">
                         <span class="flex items-center justify-between w-full mb-4">
                             <span>
-                                <a href="">
+                                <a href="../../index.html">
                                     <p>Home</p>
                                 </a>
                             </span>
                             <span>
-                                <a href="">
+                                <a href="./about-us.html">
                                     <p>About</p>
                                 </a>
                             </span>
                             <span>
-                                <a href="">
+                                <a href="./services-provided.html">
                                     <p>Service</p>
                                 </a>
                             </span>
                         </span>
                         <span class="flex items-center justify-between w-full">
                             <span>
-                                <a href="" >
+                                <a href="#" >
                                     <p class="bg-blue-500 py-2 px-8">Get Started</p>
                                 </a>
                             </span>
                             <span>
-                                <a href="">
+                                <a href="./about-us.html">
                                     <p>Contact us</p>
                                 </a>
                             </span>
                             
                         </span>
                     </div>
-                    <p class="text-white font-worksans uppercase font-light text-center lg:text-start">©2024 Bluewater legal process. All rights reserved.</p>
+                    <p class="text-blue1 text-center sm:text-start font-worksans uppercase font-light">©2024 Bluewater legal process. All rights reserved.</p>
                 </div>
-                <div class="hidden lg:flex justify-between items-center space-x-8 p-8 text-white text-lg font-worksans uppercase">
+                <div class="hidden lg:flex justify-between items-center space-x-8 p-8 text-blue1 text-lg font-worksans uppercase">
                     <span>
-                        <a href="">
+                        <a href="./about-us.html">
                             <p>Contact us</p>
                         </a>
                     </span>
                     <span>
-                        <a href="" >
-                            <p class="bg-blue-500 py-2 px-8">Get Started</p>
+                        <a href="#">
+                            <p class="bg-blue2 py-2 px-8 text-white">Get Started</p>
                         </a>
                     </span>
                 </div>

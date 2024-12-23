@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="../../public/img/logo/image.png" type="image/x-icon"/>
+    <script src="../../public/js/index.js" defer></script>
+
+    <!-- TODO: stylesheet integrations -->
+    <link href="../css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../public/css/index.css">
+
+    <!-- ? GOOGLE APIS (e.g Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- ! FLOWBITE -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+
+    <!-- ! DATAOS Scroll behavior API -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <main>
+        <section class="relative bg-center bg-cover bg-fixed bg-no-repeat w-full" id="serviceprovided">
+            <header class="relative z-40 w-full">
+                <nav class="w-full z-20 bg-white">
+                    <div class="flex 2sm:flex-wrap lg:flex-nowrap items-center justify-center lg:justify-between mx-auto w-full p-4">
+                        <div class="flex flex-wrap items-center justify-between mx-auto w-full p-4">
+                            <a href="../../index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                                <img src="../../public/img/logo/bluewater-noletters-nobg.png" class="2sm:h-10 md:h-16" alt="Bluewater Process LLC Logo">
+                                <span class="leading-tight">
+                                    <p class="text-2xl font-medium text-blue1 font-worksans">Bluewater</p>
+                                    <p class="text-sm font-poppins">Legal Process LLC</p>
+                                </span>
+                            </a>
+                            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
+                                <span class="sr-only">Open main menu</span>
+                                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="w-full lg:flex items-center justify-end bg-white py-2 rounded-full hidden  md:order-1" id="navbar-sticky">
+                            <ul class="font-worksans flex flex-col justify-center md:p-0 font-medium rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                                <li class="flex items-center"><a href="../../index.html" class="block py-2 px-3 text-blue-600 rounded md:bg-transparent md:hover:text-blue-700 md:text-blue-600 md:p-0" aria-current="page">Home</a></li>
+                                <li class="flex items-center"><a href="./about-us.html" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">About</a></li>
+                                <li class="relative flex items-center">
+                                    <button id="dropdown-button2" class="py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 flex items-center">
+                                        Services
+                                        <svg class="inline w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </button>
+                                    <ul id="dropdown-menu2" class="absolute top-8 hidden bg-white rounded shadow-lg w-48 z-50">
+                                        <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 text-gray-800">Service Area</a></li>
+                                        <li><a href="./service-terms.html" class="block py-2 px-4 hover:bg-gray-100 text-gray-800">Service Terms</a></li>
+                                        <li><a href="./services-provided.html" class="block py-2 px-4 hover:bg-gray-100 text-gray-800">Services Provided</a></li>
+                                        <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 text-gray-800">Services Blog</a></li>
+                                    </ul>
+                                </li>
+                                <li class="flex items-center"><a href="./about-us.html" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Contact</a></li>
+                                <li class="flex items-center"><button type="button" class="text-white 2sm:hidden sm:block bg-blue-700 font-worksans uppercase transition duration-500 ease-in-out hover:scale-110 font-medium rounded-lg text-sm px-8 py-4">Get started</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            
+            <div class="flex flex-col justify-end items-center w-full z-30 pt-16 pb-8">
+                <div class="2sm:w-full md:w-[60%] 2sm:px-8 2sm:text-center flex flex-col items-center justify-start text-center">
+                    <h1 class="text-blue1 text-4xl font-worksans 2sm:text-center md:text-left leading-relaxed mb-4 font-medium uppercase">Services WE Provide</h1>
+                    <span class="font-worksans text-blue1 tracking-wide leading-relaxed">
+                        <p class="mb-4 text-center font-medium">Blue Water Legal Process LLC offers the following services for your convenience:</p>
+                        <div class="rounded text-blue1 font-poppins">
+                            <p class="uppercase text-xl font-medium mb-2">Legal service of process:</p>
+                            <span class="font-light">
+                                <ul class="space-y-1">
+                                    <li>Other State Court Documents: $80.00</li>
+                                    <li>RUSH SERVICE: $35.00 to standard service fees.</li>
+                                    <li>PRIORITY URGENT SERVICE: $65.00 to standard service fees.</li>
+                                    <li>Michigan Court Documents: $26.00 + Mileage (County Courthouse to Service Address Both Ways @ $1.005/per mile)</li>
+                                </ul>
+                            </span>
+                        </div>
+                    </span>
+                </div>
+            </div>
+            <div class="w-full flex flex-col bg-blue2 bg-no-repeat bg-fixed bg-center bg-cover" id="ready4">
+                <div class="w-full flex justify-center 2sm:py-12 md:py-16">
+                    <div class="2sm:w-full flex 2sm:flex-col md:flex-row items-center justify-center 2sm:px-8 md:space-x-8">
+                        <div class="2sm:w-full md:w-1/2 2sm:mb-4 ">
+                            <img src="../../public/img/bg/pexels-cottonbro-4604662.jpg" alt="Document Delivery by Bluewater" class="h-64">
+                        </div>
+                        <div class="flex flex-col items-start text-left text-white font-worksans 2sm:w-full md:w-2/3">
+                            <p class="text-2xl font-medium mb-2">FIELD COURIER SERVICE</p>
+                            <p class="2sm:text-sm sm:text-base">Blue Water Legal Process LLC believes that a lawsuit should always be a clients last resort. Blue Water Legal Process LLC offers a less non-invasive approach to connect a client with their customer. Blue Water Legal Process offers a field letter service that will personally deliver a letter to your customer; or in the absence, the front door of the home to try to put you and your customer back into contact below a lawsuit happens. We offer this service at $50.00 per letter.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full flex justify-center 2sm:py-12 md:py-16">
+                    <div class="2sm:w-full flex 2sm:flex-col md:flex-row items-center justify-center 2sm:px-8 md:space-x-8">
+                        <div class="2sm:hidden md:flex flex-col items-start text-left text-white font-worksans w-1/2">
+                            <p class="text-2xl font-medium mb-2">COURT COURIER & ADMINISTRATIVE SERVICE</p>
+                            <p class="2sm:text-sm sm:text-base">Blue Water Legal Process LLC understands that firms can be quite busy and efficient filing of a case can be time consuming. Let Blue Water Legal Process LLC file the case of your behalf; or if needed, retrieve legal documents from the courthouse. We offer this service at $25.00 plus any court fees that may be included.</p>
+                        </div>
+                        <div class="2sm:w-full 2sm:mb-4  md:w-1/2">
+                            <img src="../../public/img/bg/pexels-olly-3760072.jpg" alt="Document Delivery by Bluewater" class="h-64">
+                        </div>
+                        <div class="2sm:flex md:hidden flex-col items-start text-left text-white font-worksans 2sm:w-full md:w-1/2">
+                            <p class="text-2xl font-medium mb-2">COURT COURIER & ADMINISTRATIVE SERVICE</p>
+                            <p class="2sm:text-sm sm:text-base">Blue Water Legal Process LLC understands that firms can be quite busy and efficient filing of a case can be time consuming. Let Blue Water Legal Process LLC file the case of your behalf; or if needed, retrieve legal documents from the courthouse. We offer this service at $25.00 plus any court fees that may be included.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full flex justify-center 2sm:py-12 md:py-16">
+                    <div class="2sm:w-full flex 2sm:flex-col md:flex-row items-center justify-center 2sm:px-8 md:space-x-8">
+                        <div class="2sm:w-full md:w-1/2 2sm:mb-4">
+                            <img src="../../public/img/bg/pexels-pixabay-38271.jpg" alt="Document Delivery by Bluewater" class="h-64">
+                        </div>
+                        <div class="flex flex-col items-start text-left text-white font-worksans 2sm:w-full md:w-2/3">
+                            <p class="text-2xl font-medium mb-2">ADDRESS SEARCH AND VERIFICATION SERVICE</p>
+                            <p>Need help finding or verifying the address of a Defendant? Let Blue Water Legal Process LLC help you out. We offer both USPS Address Verification ($10.00) plus database skip-tracing services ($50.00) to locate your Defendant.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full flex justify-center 2sm:py-12 md:py-16">
+                    <div class="2sm:w-full flex 2sm:flex-col md:flex-row items-center justify-center 2sm:px-8 md:space-x-8">
+                        <div class="2sm:hidden md:flex flex-col items-start text-left text-white font-worksans w-1/2">
+                            <p class="text-2xl font-medium mb-2">NOTARY SERVICE</p>
+                            <p>Blue Water Legal Process LLC is a commissioned Notary Public for the State of Michigan. We are happy to offer this service to LOCAL clients at $10.00 per signature/stamp needed plus mileage fees ($1.005/per mile).</p>
+                        </div>
+                        <div class="2sm:w-full 2sm:mb-4  md:w-1/2">
+                            <img src="../../public/img/bg/pexels-rdne-7841454.jpg" alt="Document Delivery by Bluewater" class="h-64">
+                        </div>
+                        <div class="2sm:flex md:hidden flex-col items-start text-left text-white font-worksans 2sm:w-full md:w-1/2">
+                            <p class="text-2xl font-medium mb-2">NOTARY SERVICE</p>
+                            <p>Blue Water Legal Process LLC is a commissioned Notary Public for the State of Michigan. We are happy to offer this service to LOCAL clients at $10.00 per signature/stamp needed plus mileage fees ($1.005/per mile).</p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="w-full flex justify-center 2sm:py-12 md:py-16">
+                    <div class="2sm:w-full flex 2sm:flex-col md:flex-row items-center justify-center 2sm:px-8 md:space-x-8">
+                        <div class="2sm:w-full md:w-1/2 2sm:mb-4">
+                            <img src="../../public/img/bg/pexels-rdne-7363155.jpg" alt="Document Delivery by Bluewater" class="h-64">
+                        </div>
+                        <div class="flex flex-col items-start text-left text-white font-worksans 2sm:w-full md:w-2/3">
+                            <p class="text-2xl font-medium mb-2">ADDITIONAL ADDRESS ATTEMPTS</p>
+                            <p>Blue Water Legal Process LLC is happy to attempt any new service address located for a Defendant on a service request without any additional fee besides distance mileage fees at the current rate ($1.005/per mile).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section id="ready3" class="relative w-full h-[60dvh] bg-cover bg-center bg-no-repeat">
+            <div class="flex items-center justify-center space-y-64 h-full text-white font-worksans px-16 relative z-30 ">
+                <div class="font-worksans text-white inline-flex flex-col items-start justify-end text-center text-lg border border-gray-500 shadow-2xl shadow-blue-600/50 bg-gradient backdrop-blur-md w-1/2 p-8 rounded">
+                    <p class="text-7xl font-poppins text-start leading-normal tracking-wide mb-2">Ready to Start your Service Request?</p>
+                    <span class="mb-4">
+                        <p class="text-left font-poppins tracking-wide">There has never been a better time than right now to get started with us. Press “Get Started” below to see our full range of services we provide.</p>
+                    </span>
+                    <a href="" class="py-3 px-12 rounded bg-blue-600">
+                        <p>Get Started</p>
+                    </a>
+                </div>
+            </div>
+        </section> -->
+        <footer class="lg:px-8">
+            <div class="flex justify-center lg:justify-between items-start">
+                <div class="hidden lg:flex  justify-between items-center space-x-8 p-8 text-blue1 text-lg font-worksans uppercase">
+                    <span>
+                        <a href="../../index.html">
+                            <p>Home</p>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="./about-us.html">
+                            <p>About</p>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="./services-provided.html">
+                            <p>Service</p>
+                        </a>
+                    </span>
+                </div>
+                <div class="flex flex-col items-center p-8 ">
+                    <span class="flex flex-col items-center uppercase mb-8">
+                        <img src="../../public/img/logo/bluewater-noletters-nobg.png" alt="Bluewater Legal Process LLC Logo" class="h-16">
+                        <p class="text-blue2 text-2xl font-worksans tracking-wider">Bluewater</p>
+                        <p class="text-blue-800 tracking-wider font-medium text-sm">Legal Process LLC</p>
+                    </span>
+                    <span class="flex items-center justify-center space-x-8 mb-8">
+                        <a href="#">
+                            <img src="../../public/img/icon/facebook (1).png" alt="Bluewater Legal Process LLC Facebook Icon" class="h-6 sm:h-8">
+                        </a>
+                        <a href="#">
+                            <img src="../../public/img/icon/instagram (1).png" alt="Bluewater Legal Process LLC Facebook Icon" class="h-6 sm:h-8">
+                        </a>
+                        <a href="#">
+                            <img src="../../public/img/icon/linkedin (1).png" alt="Bluewater Legal Process LLC Facebook Icon" class="h-6 sm:h-8">
+                        </a>
+                        <a href="#">
+                            <img src="../../public/img/icon/telegram.png" alt="Bluewater Legal Process LLC Facebook Icon" class="h-6 sm:h-8">
+                        </a>
+                        <a href="#">
+                            <img src="../../public/img/icon/whatsapp.png" alt="Bluewater Legal Process LLC Facebook Icon" class="h-6 sm:h-8">
+                        </a>
+
+                    </span>
+                    <div class="lg:hidden flex flex-col items-center text-blue1 w-full mb-8">
+                        <span class="flex items-center justify-between w-full mb-4">
+                            <span>
+                                <a href="../../index.html">
+                                    <p>Home</p>
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./about-us.html">
+                                    <p>About</p>
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./services-provided.html">
+                                    <p>Service</p>
+                                </a>
+                            </span>
+                        </span>
+                        <span class="flex items-center justify-between w-full">
+                            <span>
+                                <a href="#" >
+                                    <p class="bg-blue-500 py-2 px-8">Get Started</p>
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./about-us.html">
+                                    <p>Contact us</p>
+                                </a>
+                            </span>
+                            
+                        </span>
+                    </div>
+                    <p class="text-blue1 text-center sm:text-start font-worksans uppercase font-light">©2024 Bluewater legal process. All rights reserved.</p>
+                </div>
+                <div class="hidden lg:flex justify-between items-center space-x-8 p-8 text-blue1 text-lg font-worksans uppercase">
+                    <span>
+                        <a href="./about-us.html">
+                            <p>Contact us</p>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="#">
+                            <p class="bg-blue2 py-2 px-8 text-white">Get Started</p>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
